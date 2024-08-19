@@ -1,0 +1,36 @@
+<DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="Styles/styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="Title">Encriptador de Textos</h1>
+    </header>
+    <main class="encryptor">
+        <div class="encryptor-inputMessageSide">    
+            <textarea class="encryptor-inputMessageSide-textarea textarea" id="text" placeholder="Ingresa el texto aquí"></textarea>
+            <div class="encryptor-inputMessageSide-buttons">
+                <input class="button" type="submit" value="Encriptar" id="encryptor">
+                <input class="button" type="submit" value="Desencriptar" id="decryptor">
+                <input class="button" type="submit" value="Eliminar" id="Delete">
+            </div>
+        </div>
+        
+        <div class="encryptor-outputMessageSide">
+            <textarea class="encryptor-outputMessageSide-textarea textarea" readonly="readonly" id="textTransform"></textarea>
+            <div class="encryptor-outputMessageSide-buttons">
+                <input class="button" type="submit" value="Copiar" id="copy">
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer-paragraph"> Desarrollado por: <strong class="strong">Harold Edward Rodriguez Navarro</strong></p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+*:root{
+    --color-primario: #e7e7e7;
+    --color-secundario: #272727;
+    --color-terciario: #f6f6f6;
+    --color-hover: #dfdfdf;
+    --color-footer: #a01111;
+}
+body{
+    background-color: var(--color-primario);
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin-top: 2vh;
+    height: 20vh;
+    word-wrap: break-word;
+}
+
+.encryptor{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    gap: 30px;
+    min-height: 80vh;
+}
+.encryptor-inputMessageSide,
+.encryptor-outputMessageSide{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+.encryptor-inputMessageSide-textarea,
+.encryptor-outputMessageSide-textarea{
+    height: 50vh;
+}
+.textarea{
+    resize: none;
+    font-size: 1.2rem;
+    padding: 10px;
+    background-color: var(--color-terciario);
+}
+.encryptor-inputMessageSide-buttons,
+.encryptor-outputMessageSide-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+}
+.button{
+    margin-top: 10px;
+    padding: 20px;
+    width: 250px;
+    max-width: 100%;
+    font-size: 1.5rem;
+    background-color: var(--color-terciario);
+    border: 1px solid var(--color-secundario);
+    transition: 0.2s background-color;
+}
+.button:hover{
+    background-color: var(--color-hover);
+    cursor: pointer;
+}
+
+.footer{
+    background-color: var(--color-footer);
+    color: var(--color-primario);
+    font-size: 1.2rem;
+    padding: 25;
+    text-align: center;
+}
+.strong{
+    font-weight: 600;
+}
+
+@media (max-width: 1200px){
+    .encryptor{
+        flex-direction: column;
+        align-items: center;
+    }
+    .button{
+        width: 150px;
+        font-size: 1rem;
+    }
+    .encryptor-inputMessageSide,
+    .encryptor-outputMessageSide{
+        width: 95%;
+}
+}
